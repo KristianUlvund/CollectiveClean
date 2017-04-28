@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <link type="text/css" href="css/style.css" rel="stylesheet"/>
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-4"></div>
+            <div class="flex-4">
+                <div class="mainpage">
+                    <form th:action="@{/home}" method="post">
+                        <input type="text" name="username" placeholder="Username"/>
+                        <input type="password" name="password" placeholder="Password"/>
+                        <input type="submit" value="Login"/>
+                    </form>
+                </div>
+            </div>
+            <div class="flex-4"></div>
+        </div>
+    </body>
+</html>
